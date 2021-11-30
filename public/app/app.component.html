@@ -1,0 +1,36 @@
+
+<mat-toolbar class="header">
+  <a [routerLink]="['/home']" style="color: rgb(255, 247, 247);">Basketball Zone</a>
+</mat-toolbar>
+<mat-sidenav-container class="example-container">
+
+  <mat-sidenav  #sidenav mode="side" opened class="example-sidenav">
+    <h3>CATEGORIAS</h3>
+    <a [routerLink]="['/bones']">Bonés</a>
+    <br><br>
+    <a [routerLink]="['/bolas']">Bolas</a>
+    <br><br>
+    <a [routerLink]="['/acessorios']">Acessórios</a>
+    <br><br>
+    <a [routerLink]="['/tenis']">Tênis</a> 
+     <br><br>
+    <a [routerLink]="['/chinelos']">Chinelos</a>
+    <br><br>
+    <a [routerLink]="['/bermudas']">Bermudas</a>
+    <br><br>
+    <a [routerLink]="['/meias']">Meias</a>
+    <br><br>
+    <a [routerLink]="['/regatas']">Regatas</a>
+    <br><br>
+    <a [routerLink]="['/jaquetas']">Jaquetas</a>
+    <br><br>
+    <a [routerLink]="['/camisetas']">Camisetas</a>
+   
+  </mat-sidenav>
+  
+  <mat-sidenav-content>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+  
+</mat-sidenav-container>
+ 
